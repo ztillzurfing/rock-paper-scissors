@@ -37,10 +37,7 @@ function playRound (playerSelection, computerSelection) {
     }
     }
 
-function playGame() {
-
-
-   
+function playGame() {  
 
     for (let i = 0; i < 5; i++) {
 
@@ -51,14 +48,14 @@ function playGame() {
 
         let result = playRound(playerSelection, computerSelection);
         alert("The computer chose " + computerSelection); 
+        alert(result);
         if (result.includes("won")) {
             playerScore++;
-            alert("you won");
+            
         } else if (result.includes("lost")) {
             computerScore++;
-            alert("you lost");
-        } else {
-            alert("tie")
+                  
+            
         }    
             }
        
