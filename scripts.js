@@ -14,7 +14,10 @@ function getComputerChoice() {
     }
 }
 
- 
+// const rock = document.querySelector("#rock");
+// rock.addEventListener("click", () => {
+//     playerSelection = "rock";
+// })
 
 
 function playRound (playerSelection, computerSelection) { 
@@ -35,7 +38,9 @@ function playRound (playerSelection, computerSelection) {
         return ("You lost. Scissors beats paper");
         
     }
+    
     }
+
 
 function playGame() {  
 
@@ -47,8 +52,8 @@ function playGame() {
         const computerSelection = getComputerChoice();
 
         let result = playRound(playerSelection, computerSelection);
-        alert("The computer chose " + computerSelection); 
-        alert(result);
+        console.log("The computer chose " + computerSelection); 
+        console.log(result);
         if (result.includes("won")) {
             playerScore++;
             
@@ -60,14 +65,17 @@ function playGame() {
             }
        
     if (playerScore > computerScore) {
-        alert("you win the game!");
+        console.log("you win the game!");
     } else if(computerScore > playerScore) {
-            alert("you lose the game!")
+            console.log("you lose the game!")
         }
         
         
     }        
-    
+   
+
+
+
 playGame();
     
 
