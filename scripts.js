@@ -70,7 +70,7 @@ function playGame() {
     
 
     if (humanScore > computerScore) {
-        console.log("you won thplayerSelectione game! humanity:",humanScore,"The machine spirit:",computerScore);
+        console.log("you won the game! humanity:",humanScore,"The machine spirit:",computerScore);
     } else if (computerScore > humanScore) {
         console.log("you lost the game! humanity:",humanScore,"The machine spirit:",computerScore);
     } else if (humanScore === computerScore) {
