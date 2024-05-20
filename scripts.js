@@ -33,7 +33,6 @@ function getHumanChoice() {
     } 
 
 
-
 function playRound (humanChoice, computerChoice) {
   
     if (humanChoice === computerChoice) {
@@ -81,3 +80,5 @@ function playGame() {
 
 }
 
+// const rockBtn = document.querySelector("#rockBtn");
+// rockBtn.onclick = () => alert("Hello World");
