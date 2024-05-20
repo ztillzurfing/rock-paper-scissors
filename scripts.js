@@ -62,16 +62,16 @@ function playGame() {
 
     
     
-    for (let i = 0; i < 5; i++) {
+    
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
         
     playRound(humanSelection, computerSelection);
     console.log("humanity:",humanScore,"The machine spirit:",computerScore);
-    }
+    
 
     if (humanScore > computerScore) {
-        console.log("you won the game! humanity:",humanScore,"The machine spirit:",computerScore);
+        console.log("you won thplayerSelectione game! humanity:",humanScore,"The machine spirit:",computerScore);
     } else if (computerScore > humanScore) {
         console.log("you lost the game! humanity:",humanScore,"The machine spirit:",computerScore);
     } else if (humanScore === computerScore) {
