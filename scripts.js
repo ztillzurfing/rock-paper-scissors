@@ -32,6 +32,9 @@ function getHumanChoice() {
         }
     } 
 
+const rockBtn = document.querySelector("#rockBtn");
+rockBtn.onclick = () => alert("Hello World");
+    
 
 function playRound (humanChoice, computerChoice) {
   
@@ -79,6 +82,3 @@ function playGame() {
    
 
 }
-
-// const rockBtn = document.querySelector("#rockBtn");
-// rockBtn.onclick = () => alert("Hello World");
