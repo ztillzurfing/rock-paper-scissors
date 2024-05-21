@@ -34,6 +34,12 @@ function getHumanChoice() {
 
 const rockBtn = document.querySelector("#rockBtn");
 rockBtn.onclick = () => alert("Hello World");
+
+const paperBtn = document.querySelector("#paperBtn");
+paperBtn.onclick = () => alert("Hello World");
+
+const scissorsBtn = document.querySelector("#scissorsBtn");
+scissorsBtn.onclick = () => alert("Hello World");
     
 
 function playRound (humanChoice, computerChoice) {
