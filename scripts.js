@@ -39,7 +39,14 @@
                 }      
     
     }
-
+    function endGame() {
+        if (humanScore === 5) {
+            result.textContent += "\nyou won the game!"
+        } else if (computerScore === 5) {
+            result.textContent += "\nyou lost the game!"
+       
+        }
+    }
 
     function playGame() {
       
@@ -51,19 +58,17 @@
         button.addEventListener("click", () => {
             const computerSelection = getComputerChoice();
             playRound(button.id, computerSelection)
-            result.textContent += ` Humanity ${humanScore}: The Machine ${computerScore}`
+            result.textContent += ` Humanity: ${humanScore} The Machine Spirit: ${computerScore}`
+            endGame();
             
         })
     }); 
-
+    
 
     }
-    // function endGame() {
-    //     if (humanScore === 5|| computerScore === 5) {
-    //         return: "the winner is 
-    //     }
-    // }
+  
     playGame();
+    
 
 
    
