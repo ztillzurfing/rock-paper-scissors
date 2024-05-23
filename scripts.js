@@ -32,14 +32,7 @@ function getHumanChoice() {
         }
     } 
 
-const rockBtn = document.querySelector("#rockBtn");
-rockBtn.onclick = () => alert("Hello World");
 
-const paperBtn = document.querySelector("#paperBtn");
-paperBtn.onclick = () => alert("Hello World");
-
-const scissorsBtn = document.querySelector("#scissorsBtn");
-scissorsBtn.onclick = () => alert("Hello World");
     
 
 function playRound (humanChoice, computerChoice) {
@@ -72,7 +65,7 @@ function playGame() {
     
     
     const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    
         
     playRound(humanSelection, computerSelection);
     console.log("humanity:",humanScore,"The machine spirit:",computerScore);
@@ -88,3 +81,13 @@ function playGame() {
    
 
 }
+const computerSelection = getComputerChoice();
+
+const rockBtn = document.querySelector("#rockBtn");
+rockBtn.onclick = () => playRound("rock", computerSelection);
+
+const paperBtn = document.querySelector("#paperBtn");
+paperBtn.onclick = () => playRound("paper", computerSelection);
+
+const scissorsBtn = document.querySelector("#scissorsBtn");
+scissorsBtn.onclick = () => playRound("scissors", computerSelection);
