@@ -83,12 +83,20 @@ function playGame() {
 }
 const computerSelection = getComputerChoice();
 
-const rockBtn = document.querySelector("#rockBtn");
-rockBtn.addEventListener("click", () => playRound("rock", computerSelection));
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+        playRound(button.id, computerSelection)
+    })
+});
+// const rockBtn = document.querySelector("#rockBtn");
+// rockBtn.addEventListener("click", () => playRound("rock", computerSelection));
 
 
-const paperBtn = document.querySelector("#paperBtn");
-paperBtn.addEventListener("click", () => playRound("paper", computerSelection));
+// const paperBtn = document.querySelector("#paperBtn");
+// paperBtn.addEventListener("click", () => playRound("paper", computerSelection));
 
-const scissorsBtn = document.querySelector("#scissorsBtn");
-scissorsBtn.addEventListener("click", () => playRound("scissors", computerSelection));
+// const scissorsBtn = document.querySelector("#scissorsBtn");
+// scissorsBtn.addEventListener("click", () => playRound("scissors", computerSelection));
