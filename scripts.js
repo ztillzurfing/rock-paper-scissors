@@ -84,10 +84,11 @@ function playGame() {
 const computerSelection = getComputerChoice();
 
 const rockBtn = document.querySelector("#rockBtn");
-rockBtn.onclick = () => playRound("rock", computerSelection);
+rockBtn.addEventListener("click", () => playRound("rock", computerSelection));
+
 
 const paperBtn = document.querySelector("#paperBtn");
-paperBtn.onclick = () => playRound("paper", computerSelection);
+paperBtn.addEventListener("click", () => playRound("paper", computerSelection));
 
 const scissorsBtn = document.querySelector("#scissorsBtn");
-scissorsBtn.onclick = () => playRound("scissors", computerSelection);
+scissorsBtn.addEventListener("click", () => playRound("scissors", computerSelection));
